@@ -1,0 +1,3 @@
+SET ANSI_NULLS komutu, sql koşullarda (where) eğer açıksa (ON) "=" şeklinde karşılaştırma yapmamıza izin vermez sonuç false döner
+is null şeklinde veya is not null şeklinde karşılaştırma yapabiliriz eğer kapalıysa "=" şeklinde karşılaştırma yapabiliriz ve sonuçları görebiliriz
+
