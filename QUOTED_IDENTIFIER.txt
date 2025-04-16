@@ -1,0 +1,20 @@
+SET QUOTED_IDENTIFIER ON Ne Yapar?
+Çift tırnak (" ") içindeki ifadeler sütun, tablo, vs. gibi nesne adları olarak yorumlanır.
+
+Tek tırnak (' ') sadece metin (string) değerleri belirtmek için kullanılır.
+
+Örnek:
+
+SET QUOTED_IDENTIFIER ON;
+
+-- Geçerli: Nesne adı çift tırnakla belirtilebilir
+SELECT "First Name" FROM Employees;
+
+-- Geçerli: Metin değeri tek tırnakla belirtilir
+SELECT * FROM Employees WHERE LastName = 'Smith';
+
+Örnek:
+SET QUOTED_IDENTIFIER OFF;
+
+-- Geçerli: Artık çift tırnak da string kabul edilir
+SELECT * FROM Employees WHERE LastName = "Smith";  -- Bu bir stringdir
