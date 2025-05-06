@@ -1,0 +1,8 @@
+Having dönen değere göre koşul yazılmak istenirse where hata verecektir bu durumlarda kullanacağımız
+
+--Net bakiyesi 5'ten büyük olanlar listelenecek
+select KitapYayınEvi, COUNT(*) as 'Kitap Sayısı',
+SUM(KitapFiyat) as 'Alacak',
+SUM(Vergi) as 'Verecek',
+(SUM(KitapFiyat)-SUM(Vergi))as 'NET Bakiye'
+from Kitap group by KitapYayınEvi having (SUM(KitapFiyat)-SUM(Vergi))>5

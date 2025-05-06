@@ -1,0 +1,17 @@
+--constraint (kısıtlama) oluşturma
+create table ogrenci(
+ogrno int not null primary key,
+ogrilce varchar(20) default 'seyhan',
+ogrsinav1 tinyint check (ogrsinav1>0),
+ogrsinav2 int,
+constraint chks2 check (ogrsinav2>=0 and ogrsinav2<=100),
+ogrkol varchar(20),
+constraint chkkol check(ogrkol in('sağlık','kütüphane','çevre','trafik'))
+)
+
+--ogrenci tablosuna ograddress sütunu ekler
+alter table ogrenci add ograddress varchar(50)
+--güncelleme
+alter table ogrenci alter column ograddress varchar(150)
+--kolon silme
+alter table ogrenci drop column ograddress

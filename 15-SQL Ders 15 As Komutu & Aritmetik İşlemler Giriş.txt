@@ -1,0 +1,2 @@
+select alanadı as 'takmaad' from tabloadı
+select KitapAd, KitapYazar, KitapFiyat, KitapFiyat+2 as 'Yeni Fiyat' from Kitap

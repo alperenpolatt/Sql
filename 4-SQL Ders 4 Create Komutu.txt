@@ -1,0 +1,10 @@
+Transact-SQL yani T-SQL Microsoft SQL Server veritabanı için kullanılan sorgulama diline verilen isimdir. 
+
+create database okul -> okul adında database oluşturur.
+use okul
+create table ogr(
+	OgrNumara varchar(4),
+	OgrAd varchar(12),
+	OgrSoyad varchar(20),
+	OgrTc char(11),
+	OgrBilgi text) --ogr adında tablo oluşturur

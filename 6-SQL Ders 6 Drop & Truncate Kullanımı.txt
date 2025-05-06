@@ -1,0 +1,8 @@
+İstediğimiz tablo yada sütünü silmek için kullanacağımız komut
+drop table ogr2 --ogr2 adlı tabloyu siler 
+
+use okul
+alter table ogr drop column BaslamaTarih --ogr tablosundaki BaslamaTarih adlı sütunu siler 
+
+Truncate tablo içerisindeki kayıtları siler
+truncate table ogr

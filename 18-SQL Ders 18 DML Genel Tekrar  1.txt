@@ -1,0 +1,2 @@
+select * from kitap where kitapad like 'K_____'
+--baş harfi k olan ve toplamda 6 karakter olan kitabı getir mesele "kaşağı"

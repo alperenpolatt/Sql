@@ -1,0 +1,2 @@
+Datediff istenilen formatta 2 tarih arasındaki farkı dönderiyor.
+select DATEDIFF(year, '1923-10-29','2016-10-29')

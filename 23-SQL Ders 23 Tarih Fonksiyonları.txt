@@ -1,0 +1,6 @@
+--Şimdiki tarih ve zamanı getirir
+select GETDATE()
+--Datepart tarihi parçalara ayırmamıza yarar
+select DATEPART(YEAR,GetDate()) as 'Yıl'
+select DATEPART(MONTH,'2016-04-25') as 'Ay'	
+select * from Kitap where DATEPART(year,KitapTarih)=2016

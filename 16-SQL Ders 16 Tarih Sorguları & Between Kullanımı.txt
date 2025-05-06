@@ -1,0 +1,1 @@
+select * from kitap where KitapFiyat between 9 and 25 --9 ve 25 dahil

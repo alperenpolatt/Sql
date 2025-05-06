@@ -1,0 +1,3 @@
+select * from Kitap order by KitapNo --KitapNo başlangıcından itibaren sıralamaya başlar
+
+select * from Kitap order by KitapNo desc --Azalan sıralama ile sıralar

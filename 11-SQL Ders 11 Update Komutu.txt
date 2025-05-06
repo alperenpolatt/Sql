@@ -1,0 +1,2 @@
+update tabloadı set alanadı="yeni değer" where şart 
+update Kitap set KitapFiyat=5 where KitapFiyat<5

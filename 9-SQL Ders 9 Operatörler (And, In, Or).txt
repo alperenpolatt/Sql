@@ -1,0 +1,4 @@
+select * from Kitap where KitapSayfa in(200,300,220) --in parentez içeriswinde bulunan alanlar sağlanan değerleri bana getir
+
+select * from Kitap where KitapAd like '%a%' --Kitap adında a içeren kitaplar
+select * from Kitap where KitapAd like 'a%' --Kitap adı a ile başlayan kitaplar

@@ -1,0 +1,7 @@
+Sql de bazen kullanacağımız bir takım alanları beraber getirmek isteriz
+--Kitap yayın evinin kaçartane kitaba sahip olduğunu bulmak için gruplandırma yaptık
+select KitapYayınEvi, Count(*) from Kitap group by KitapYayınEvi order by KitapYayınEvi asc
+--Her bir yayın evinin toplamda ne kadar kazandığını bulalım
+select KitapYayınEvi, Sum(KitapFiyat) as 'Toplam Fiyat' from Kitap Group by KitapYayınEvi
+--where koşulu girince
+select KitapYayınEvi, Count(*) from Kitap where KitapFiyat>10 group by KitapYayınEvi order by KitapYayınEvi asc

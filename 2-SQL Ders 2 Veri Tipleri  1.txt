@@ -1,0 +1,24 @@
+bigint-> 8 byte uzunluğunda,  tam sayı veri tipi için
+binary-> max 8000 byte uzunluğunda binary ikili sayı sistemi için (0,1) değerler için
+bit-> sadece true veya false boolean alanlar için kullanılır.
+char-> sabit uzunlukta kullanılacak üzerinde aritmetik işlem yapılmayacak değerler için kullanılan veri tipi mesela TCNo char(11) kullanılabilir.
+date-> 3 bytelık yer kaplar ve sadece yıl, ay ve günü tutar
+datetime-> 8 byte yıl,ay,gün, saat, dakika, ve saniye
+datetime2(7)-> ayrıyeten 7 basamaklı sanisede tutuyor 
+datetimeoffset(7)-> ülkelere göre değişen zaman farkı için tarih türü 
+decimal-> ondalıklı veri tutan veri tipi 
+float-> boyutu ve doğruluğu aldığı parametreye göre değişen noktalı sayılar için 
+geography-> coğrafi konum bilgileri ve gps bilgileri için 
+geometry-> geometrik şekillerin en boy yükseklik verileri için 
+hierarcy-> kategori kullanacağımız zaman ideal veri tipi
+int-> aritmetik işlemler için kullanılan tam sayı değerler için 
+money-> 8 byte para birimi için kullanılır
+nchar-> sabit uzunlukta ama char'a göre 2 katı yer kaplar "n" harfi latin alfabesinin dışında diller için kullanılır 
+numeric-> decimal ile aynı 
+nvarchar-> varchar'ın 2 katı 
+real-> aritmetik ondalıklı işlemler için en büyük veri tipi
+smalldatetime-> datetime 1753 ile 9999 yılları arasında smalldatetime ise 1900 ile 2079 yılları arasında 
+smallint-> artı eksi 32 bin sayılarına kadar 
+text-> alfabetik değerler için kullanılan veri türü
+varchar-> değişken uzunlukta üzerinde aritmetik işlem yapılmayacak veri tipleri için
+

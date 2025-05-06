@@ -1,0 +1,6 @@
+insert into tabloadı values(veriler)
+insert into ogr values(1,'Alperen','Polat',11111111111,'bilgi',100,'güvenevler')
+
+veya
+
+inser into tabloadı (alanlar) values(veriler)

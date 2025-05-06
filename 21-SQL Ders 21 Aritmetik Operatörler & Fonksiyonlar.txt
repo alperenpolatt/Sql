@@ -1,0 +1,19 @@
+--Sonuçları yeni tabloda gösterme
+select 20+4 as 'Toplam', 20-4 as 'Fark'
+--Kitap fiyatlarına 3 er lira zam ve Yeni Fiyat adlı sütünda gösterme
+select KitapAd, KitapFiyat, KitapFiyat+3 as 'Yeni Fiyat' from Kitap
+--birleştirme
+select KitapAd + '-' + KitapYazar as 'Kitaplık' from Kitap
+--Substring
+select Substring(sütun, başlangıç, bitiş) from tablo
+select Substring(KitapAd,1,5) from Kitap 
+--Left, right sağdan veya soldan istenilen karakter kadar alınmasını sağlar
+select Left(KitapAd,4) from Kitap
+--Büyük, küçük harf
+select upper(KitapAd) as 'BÜYÜK HARF', lower(KitapAd) as 'küçük harf' from Kitap
+--Karakter Sayısı
+select KitapAd, LEN(KitapAd) as 'Karakter Sayısı' from Kitap
+--replace
+select KitapAd, Replace(KitapYazar,'Zülfü Livaneli','Z.Livaneli') from Kitap
+--reverse
+select reverse(KitapAd) from Kitap

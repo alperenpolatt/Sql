@@ -1,0 +1,10 @@
+--Üste yuvarlama (ceiling) alta yuvarlama (floor)
+select ceiling(KitapFiyat) as 'Kitap Fiyatları', KitapFiyat, floor(KitapFiyat) as 'Kitap Fiyatları2', KitapAd from Kitap	
+--round(alan adı, virgülden sonra kaç basamak geleceği) yuvarlama
+select KitapAd, KitapFiyat, round(KitapFiyat,1) from Kitap
+--toplam
+select sum(KitapFiyat) as 'Toplam' from Kitap
+--ortalama
+select avg(KitapFiyat) as 'ortalama' from Kitap
+--count
+select count(KitapAd) from Kitap

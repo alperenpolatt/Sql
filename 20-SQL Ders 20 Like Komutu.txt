@@ -1,0 +1,6 @@
+--KitapAdı b ile başlayıp e ile biten kitaplar
+select * from kitap where KitapAd like 'b%e'
+--Kitap adının başlangıcı a'dan e'ye kadar olan ve sonu önemli olmayan kitaplar
+select * from kitap where KitapAd like '[a-e]%'
+-- ^ kullanımı değildir anlamında adı a ile f harfi arasında olmayan
+select * from kitap where KitapAd like '[^a-f]%'

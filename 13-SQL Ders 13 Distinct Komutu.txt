@@ -1,0 +1,1 @@
+select distinct KitapAd from Kitap --Kitap adı farklı olanları getirir örneğin kitapadı aynı olan 3 kayıt varsa sadece 1 ini getirir.
