@@ -7,3 +7,6 @@ INTERSECT
 SELECT Id FROM Country
 
 --Except 2 sorgunun farkýnda kullanýlýr.
+SELECT CountryId FROM Persons
+EXCEPT
+SELECT Id FROM Country
